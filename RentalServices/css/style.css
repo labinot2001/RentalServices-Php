@@ -1,0 +1,946 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{ 
+    display: flex;
+}
+header h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute; 
+    margin: 200px 0 0 390px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
+video{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    object-fit:fill;
+}
+.logo{
+    position: relative;
+    width: 50%;
+    padding: 25px 95px;
+}
+    
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+}
+/* .a-bottom:hover{
+    border-bottom: 1px solid red;
+} */
+    
+.logo a span{
+    color: #e4461f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+.content-nav{
+     display: flex;
+     width: 50%;
+     padding: 20px 60px;
+    
+}
+.nav{
+    
+    width:60%;
+    display: flex;
+    
+}
+.nav ul{
+    display:flex;
+        
+    
+}
+.nav ul li{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    
+}
+.nav ul li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    right: 30px;
+}
+    
+.nav ul li a:hover{
+    color: #e4461f;
+    border-bottom: 2px solid red;
+
+
+}  
+.active{
+    border-bottom: 2px solid red;
+} 
+
+
+
+
+
+/*Slider - Home */
+#slides {
+    position: relative;
+    height: 450px;
+    padding: 0px;
+    margin: 2px 0 0 0;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url("../assets/Cars-and-DrivingImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.slide:nth-of-type(2) {
+    background-image: url("../assets/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.slide:nth-of-type(3) {
+    background-image: url("../assets/feedback4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* #slideshow {
+    position: relative;
+}
+#slideshow div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+.TopSection1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    height: 390px;
+    background-image: url("../assets/background4.jpg");
+    background-size: 100% 100%;
+}
+.TopSection0{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    height: 390px;
+    background-image: url("../assets/Cars-and-DrivingImage.jpg");
+    background-size: 100% 100%;
+}
+.TopSection2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; 
+    height: 390px;
+    background-image: url("../assets/feedback4.png");
+    background-size: 100% 100%;
+} */
+ .h4-section{
+    color: #e4461f;
+    width: auto;
+    text-align: center;
+}
+.h1-section{
+    color: #ffffff;
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: .2rem;
+}
+/*DetialSection */
+.detailSection{
+    width: 100%;
+    height: 390px;
+    margin: 400px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../assets/contactForm2.jpg");
+}
+.detailSection .foto1{
+    width: 400px;
+    height: 310px;
+    background-image: url("../assets/budget.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+}
+.detailSection .foto2{
+    width: 400px;
+    height: 310px;
+    background-image: url("../assets/onlineRent.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 40px 0 10px 0;
+    border-radius: 20px;
+
+
+}
+.detailSection .foto3{
+    width: 400px;
+    height: 310px;
+    background-image: url("../assets/process.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 70px 0 10px 0;
+    border-radius: 20px;
+
+}
+
+/*Offers Section */
+.offers{
+    width: 97%;
+    height: 600px;
+    border-radius: 30px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(233, 233, 233);
+    justify-content: space-around;
+    background-image: url("../assets/background8.jpg");
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 10px 20px;
+}
+
+.offers1{
+
+    border-radius: 30px;    
+    margin-top: 30px;
+    width: 300px;
+    height: 520px;
+    background-image: url("../assets/handImage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-size: 100% 55%;
+    background-color: rgb(52, 194, 194);
+    transition: all .4s ease;  margin: 40px ;
+
+}
+.offers1:hover{
+    transform: scale(1.1);
+}
+.offers1 h2{
+    text-align: center;
+    margin-top: 295px;
+    font-size: 22px;
+    
+}
+.offers1 p{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(90, 90, 90);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: 14px 40px 0 40px;
+}
+.offers1 button{
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e4461f;
+    border-radius: 15px;
+    background-color: #e4461f;   
+    color: white; 
+
+}
+.offers2{
+    border-radius: 30px;    
+    margin-top: 30px;
+    width: 300px;
+    height: 520px;
+    background-size: contain;
+    background-repeat: no-repeat ;
+    background-size: 100% 55%;
+    background-color: rgb(52, 194, 194);
+    transition: all .4s ease;  margin: 40px ;
+
+}
+.offers2:hover{
+    transform: scale(1.1);
+}
+.offers2 h2 {
+    margin-top: 5px;
+    text-align: center;
+}
+.offers2 h6{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 19px;
+
+
+}
+.offers2 p{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(90, 90, 90);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.offers2 button{
+    text-align: center;
+    margin: 1px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #e4461f;
+    border-radius: 15px;
+    background-color: #e4461f;   
+    color: white; 
+
+}
+
+
+/*CONTACT FORM*/
+
+.formBox{
+    width: 500px;
+    height: 550px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../assets/contactForm3.jpg");
+    background-size: 100% 100%;
+    border-radius: 30px;
+}
+.formBox span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+form textarea{
+    padding: 4px 15px 4px 15px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;  
+    border: 2px solid #f3f1f1; 
+}
+form label{
+    margin: 0 auto;
+}
+form span{
+    margin: 0 auto; 
+}
+.inputi{
+    width: 350px;
+    height: 45px;
+    margin: 0 auto ;
+    padding: 1em;
+} 
+.formBox h1{
+    align-self: center;
+    margin-bottom: 50px;
+    color: rgb(66, 66, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.submitContact{
+    text-align: center;
+    margin: 1px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    color: white; 
+}
+.submit{
+    width: 120px;
+    height: 50px;
+    margin: 0 auto ;  
+    background-color: rgb(17, 17, 158);
+}
+.formBox input{
+    color: rgb(97, 95, 94);
+    border-radius: 5px;  
+    border: 2px solid #f3f1f1; 
+}
+.bodyContact{
+    height: 100%;
+    background-image: url("../assets/contactForm.jpg");
+    background-size: 100% 100%;
+}
+
+/* Footer */
+
+footer{
+    bottom: 0;
+    display: flex;
+}
+
+.footer-distributed{
+    background-color:#2a2f2d;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 2px;
+}
+.footer-distributed .footer-l{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-distributed .footer-center{
+    display: inline-block;
+    vertical-align: top;
+    left: 5%;
+}
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-l{
+    width:30%;
+}
+.footer-distributed h3{
+    color:#ffffff;
+    font: normal 35px;
+    margin: 0;
+}
+.footer-distributed h3 span{
+    color: #e4461f;
+}
+.footer-distributed .footer-links{
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a{
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-distributed .footer-company-name{
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-center{
+    width: 35%;
+}
+.footer-distributed .footer-center i{
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color:#ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center p span{
+     display: block;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 2; 
+}
+.footer-distributed .footer-center p a{
+    color: #e4461f;
+    text-decoration: none;
+}
+.footer-distributed .footer-right{
+    width: 30%;
+}
+ .footer-distributed .footer-company-about{
+     line-height: 20px;
+     color:#92999f;
+     font-size: 13px;
+     font-weight: normal;
+     margin: 0;
+ }
+ .footer-distributed .footer-company-about span{
+     display: block;
+     color: #ffffff;
+     font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+ .footer-distributed .footer-icons{
+     margin-top: 25px;
+ }
+ .footer-distributed .footer-icons a{
+     display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color: #33383b;
+     border-radius: 2px;
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+     margin-right: 3px;
+     margin-bottom: 5px;
+ }
+ .footer-distributed .footer-icons a:hover{
+     background-color: #e4461f;
+ }
+.footer-links a:hover{
+    color: #e4461f;
+ }
+    
+ /*LoginForm & Register Form*/
+ .login-body{
+    background-image: url("../assets/login6.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 2em 3em;
+ }
+ .login-body .loginTop{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+ }
+ .register-body .loginTop{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+ }
+ .register-box span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+
+ }
+ .login-box span{
+    width: 68%;
+    color: red;
+    font-size: 13.8;
+
+ }
+
+ .register-body{
+    background-image: url("../assets/login7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 130%;
+
+
+ }
+ .login-box{
+    background-color: rgba(224, 93, 5, 0.5);
+    width: 500px;
+    height: 450px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    background-image: url("../assets/contactForm2.jpg");
+ }
+ .register-box{
+    background-color: rgba(224, 93, 5, 0.5);
+    margin: 0 auto;
+    width: 60%;
+    padding: 40px 30px 70px 70px;
+    height: 459px;
+    border-radius: 30px;
+    background-image: url("../assets/contactForm2.jpg");
+ }
+ .register-innerBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 459px;
+ }
+ .register-innerBox > .shrink{
+    flex-shrink: 1;
+}
+
+
+ .login-box h1{
+    align-self: center;
+    color: white;
+ }
+ .login-box label{
+    color: white;
+    margin-left: 90;
+    margin-bottom: 10px;
+ }
+ .login-box input{
+    align-self: center;
+    border-color: #e4461f;
+    border-radius: 5px;
+ }
+
+ .register-box h1{
+    align-self: center;
+    color: white;
+ }
+
+.labelRegister{
+
+    color: white;
+    font-size: 13px;
+
+}
+ .register-box input{
+    align-self: center;
+    border-color: #e4461f;
+    border-radius: 5px;
+ }
+/*AboutUs*/
+
+.bodyAbout{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: linear-gradient(to right top, #0459da, #4c699e, #102a62, #4e7dff, #010043);
+}
+.about-section{
+    background: url("../assets/AboutUs.jpg") no-repeat left;
+    background-size: 75%;
+    background-color: linear-gradient(to right top, #0459da, #4c699e, #102a62, #4e7dff, #010043);
+    overflow: hidden;
+    padding: 30px 0;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 100px;
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{
+    font-size: 15px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.socials{
+    display: flex;
+    line-height: 38px;
+    justify-content: space-between;
+}
+.socials a{
+    display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color: #33383b;
+     border-radius: 2px;
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+     margin-right: 3px;
+     margin-bottom: 5px;
+}
+.socials a:hover{
+    color: #e4461f;
+}
+
+
+
+
+/* Products -- Cars */
+
+body{
+    background-image: linear-gradient(to right top, #0459da, #4c699e, #102a62, #4e7dff, #010043);
+}
+.Car-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3em auto;
+  padding:  0;
+  background-image: linear-gradient(to right top, #8c7fd9, #8583d9, #7e87d9, #788bd8, #738ed7, #768ed4, #798ed0, #7b8ecd, #838bc8, #8a89c2, #8f87bd, #9485b7);  
+  width: 1200px;
+  
+}
+
+
+.Car-products .product {
+  flex: 0 0 120px;
+  position: relative;
+  width: 350px;
+  height: 433px;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;  margin: 40px ;
+  padding: 0;
+ 
+}
+.Car-products .product:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+    transform: scale(1.1);
+
+  }
+ 
+  .Car-products .product img{
+
+    width: 300px;
+    height:300px;
+      
+}
+.Car-products .product .formBtn form{
+    position: absolute;
+    bottom: -10rem; left: 0; right: 0;
+    display: none;
+
+}
+.Car-products .product:hover .formBtn form{
+    bottom:133px;
+    transition: .4s ease;
+    display: block;
+}
+
+.Car-products .product .formBtn form input{
+
+    height: 2rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    background: orange;
+    color: #fff;
+}
+.Car-products .product .formBtn form input .cart-btn{
+
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 50%;
+}
+
+/* detail cars*/
+.flexii{
+    background-image: linear-gradient(to right top, #5a84c4, #497bce, #3c70d6, #3764dd, #3c56e1);   display: flex;
+    flex-wrap: nowrap;
+    width: 900px;
+    height: 500px;
+    justify-content: center;
+    border: solid;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.imageii{
+    width: 500px;
+    height: 100%;
+}
+.imageii img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.contentii{
+    margin-left: 20px;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 60px ;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.data{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.dataFill{
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+/* Cart section */
+.cart{
+    margin-top: 5rem !important;
+}
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.7rem;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background: rgb(255, 60, 93);
+}
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart .remove-btn{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.35rem ;
+    background-color:rgb(255, 60, 93);
+    width: 100%;
+    padding: 3px;
+}
+.cart .product-info p{
+    margin: 3px;
+    font-size: 1.25rem;
+    color: #fff;
+
+}
+
+.cart td img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 10px;
+}
+.cart .product-info{
+    margin-top: 5px;
+    color: #fff;
+
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid rgb(255, 60, 93);
+}
+.cart-total .aelement{
+    margin-right: 442;
+    margin-top: 10px;               
+    color: white;
+    text-decoration: none;
+}
+.cart-total .aelement:hover{
+    color:rgb(255, 60, 93);
+}
+td:last-child{
+    text-align: right;
+    color: #fff;
+
+}
+th:last-child{
+    text-align: right;
+    color: #fff;
+
+}
+
+.checkout-container{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.checkout-btn:hover{
+    color: #fff;
+    background: rgb(233, 109, 130) ;
+}
+
+form .checkout-btn{
+    background:rgb(255, 60, 93) ;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.edit-btn{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.35rem ;
+    background-color:rgb(255, 60, 93);
+    width: 30%;
+    padding: 3px;
+}
+.reset-btn{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.35rem ;
+    background-color:rgb(91, 142, 194);
+    width: 30%;
+    padding: 3px;
+}
+
+
+
+
